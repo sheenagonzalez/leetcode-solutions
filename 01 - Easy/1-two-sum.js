@@ -51,7 +51,7 @@ var twoSum = function(nums, target) {
   // If exists, return both indices
   for (let j = 0; j < nums.length; j++) {
       let index2 = targetDifferenceIndex[nums[j]];
-      if (index2) {
+      if (index2 && (index2 != j)) {
           return [j, index2];
       }
   }
